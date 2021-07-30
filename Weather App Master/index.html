@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>GG's Weather App</title>
+  </head>
+  <body>
+    <div class="container" id="border">
+      <div class="container" id="main-body">
+        <form class="form-inline" id="searchForm">
+          <div class="row">
+            <div class="col-6">
+              <div class="mb-4">
+                <input
+                  type="search"
+                  placeholder="Search for a city..."
+                  class="form-control"
+                  id="searchBar"
+                />
+              </div>
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="btn btn-primary" id="searchBtn">
+                Search
+              </button>
+            </div>
+            <div class="col-auto">
+              <button
+                type="submit"
+                class="btn btn-secondary"
+                id="current-location-btn"
+              >
+                Current
+              </button>
+            </div>
+          </div>
+        </form>
+        <h1>CARDIFF</h1>
+        <h2>
+          THURSDAY 24TH JUNE
+          <div>15:37</div>
+        </h2>
+
+        <h4>22°C</h4>
+        <h5>SCATTERED CLOUDS</h5>
+        <div class="row justify-content-center" id="descriptors">
+          <div class="col-2 p-3" id="humidity-style">
+            Humidity
+            <div id="humidity">67</div>
+          </div>
+          <div class="col-2 p-3" id="feels-like-style">
+            Feels Like
+            <div id="feelsLike">20</div>
+          </div>
+          <div class="col-2 p-3" id="wind-style">
+            Wind
+            <div id="wind">1km/h</div>
+          </div>
+        </div>
+
+        <div class="row" id="forecast">
+          <div class="col-2 p-3" id="forecast-1">
+            Today <br />
+            <img src="images/cloud.png" alt="clouds" width="50px" /> <br />
+            20°C
+          </div>
+          <div class="col-2 p-3" id="forecast-2">
+            Fri <br />
+            <img src="images/sunny.png" alt="sun" width="50px" /> <br />25°C
+          </div>
+          <div class="col-2 p-3" id="forecast-3">
+            Sat <br />
+            <img src="images/cloud.png" alt="cloud" width="50px" /> <br />21°C
+          </div>
+          <div class="col-2 p-3" id="forecast-4">
+            Sun <br />
+            <img src="images/thunder.png" alt="sun" width="50px" /><br />
+            23°C
+          </div>
+          <div class="col-2 p-3" id="forecast-5">
+            Mon <br />
+            <img src="images/wind cloud.png" alt="sun" width="50px" />
+            <br />23°C
+          </div>
+          <div class="col-2 p-3" id="forecast-6">
+            Tues <br />
+            <img src="images/cloud.png" alt="cloudy" width="50px" /> <br />20°C
+          </div>
+        </div>
+        <script src="src/script.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
