@@ -45,6 +45,7 @@ body {
 
 #border {
   max-width: 725px;
+  max-height: 700px;
   background-color: white;
   padding: 40px;
   margin-top: 20px;
@@ -52,8 +53,7 @@ body {
 }
 
 #main-body {
-  max-width: 700px;
-  max-height: 550px;
+ 
   text-align: center;
   font-family: "Quicksand", sans-serif;
 }
